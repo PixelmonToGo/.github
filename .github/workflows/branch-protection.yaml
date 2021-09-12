@@ -2,6 +2,9 @@
 name: Branch Protection
 
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: 0 * * * *
   workflow_dispatch:
