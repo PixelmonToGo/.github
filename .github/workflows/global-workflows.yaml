@@ -20,5 +20,5 @@ jobs:
           committer_email: webmaster@pixelmontogo.com
           committer_username: ptgbot
           files_to_ignore: global-workflows.yaml,branch-protection.yaml
-          files_to_include: .mega-linter.yml
+          files_to_include: .mega-linter.yml,.pre-commit-config.yaml
           github_token: ${{ secrets.PAT }}

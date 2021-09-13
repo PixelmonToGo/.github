@@ -14,3 +14,7 @@ Replicates workflows from this repo to all repos in the org.
 
 Analyzes consistency and quality of most code.
 
+## [pre-commit](https://pre-commit.com/)
+
+A framework for managing and maintaining multi-language pre-commit hooks.
+
