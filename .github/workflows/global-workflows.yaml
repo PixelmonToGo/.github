@@ -4,7 +4,7 @@ name: Global Workflows
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   replicate_changes:
