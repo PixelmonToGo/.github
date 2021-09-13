@@ -6,7 +6,11 @@ Automation for the [@PixelmonToGo](https://github.com/PixelmonToGo) GitHub organ
 
 Applies global branch protection [rules](./branch-protection/rules.json) to all repos in the org, excluding those [listed here](./branch-protection/excluded-repos.txt).
 
-## [global-workflows](https://github.com/derberg/global-workflows-support/)
+## [global-workflows](https://github.com/derberg/global-workflows-support)
 
 Replicates workflows from this repo to all repos in the org.
+
+## [mega-linter](https://github.com/nvuillam/mega-linter)
+
+Analyzes consistency and quality of most code.
 
