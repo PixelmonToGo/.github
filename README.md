@@ -18,3 +18,7 @@ Analyzes consistency and quality of most code.
 
 A framework for managing and maintaining multi-language pre-commit hooks.
 
+## [semantic-pull-requests](https://github.com/zeke/semantic-pull-requests)
+
+Ensures pull requests follow the [Conventional Commmits spec](https://www.conventionalcommits.org/en/v1.0.0/)
+
