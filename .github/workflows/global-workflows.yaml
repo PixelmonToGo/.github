@@ -22,3 +22,4 @@ jobs:
           files_to_ignore: global-workflows.yaml,branch-protection.yaml
           files_to_include: .mega-linter.yml,.pre-commit-config.yaml,.github/semantic.yml
           github_token: ${{ secrets.PAT }}
+          exclude_forked: true
