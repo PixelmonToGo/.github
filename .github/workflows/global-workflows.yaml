@@ -10,6 +10,7 @@ on:
 jobs:
   replicate_changes:
     runs-on: ubuntu-latest
+    if: ${{ failed() }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -23,3 +24,4 @@ jobs:
           files_to_include: .pre-commit-config.yaml,.github/semantic.yml
           github_token: ${{ secrets.PAT }}
           exclude_forked: true
+          repos_to_ignore: custom-models
