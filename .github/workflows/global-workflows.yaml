@@ -23,3 +23,4 @@ jobs:
           files_to_include: .pre-commit-config.yaml,.github/semantic.yml
           github_token: ${{ secrets.PAT }}
           exclude_forked: true
+          repos_to_ignore: custom-models
