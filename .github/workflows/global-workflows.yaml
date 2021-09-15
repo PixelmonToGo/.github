@@ -17,7 +17,7 @@ jobs:
       - name: Replicating global workflow
         uses: chipwolf/global-workflows-support@v0.6.0
         with:
-          commit_message: 'chore(ci): update global workflows'
+          commit_message: "chore(ci): update global workflows"
           committer_email: webmaster@pixelmontogo.com
           committer_username: ptgbot
           files_to_ignore: global-workflows.yaml,branch-protection.yaml
