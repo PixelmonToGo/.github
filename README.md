@@ -22,3 +22,7 @@ A framework for managing and maintaining multi-language pre-commit hooks.
 
 Ensures pull requests follow the [Conventional Commmits spec](https://www.conventionalcommits.org/en/v1.0.0/)
 
+## [settings](https://github.com/probot/settings)
+
+This GitHub App syncs repository settings defined in [.github/settings.yml](./.github/settings.yml).
+The settings defined in this special repository are global to the GitHub organisation and may be overriden in other repositories.
