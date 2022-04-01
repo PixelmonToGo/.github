@@ -1,28 +1,28 @@
----
-name: Branch Protection
-
-on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: 0 * * * *
-  workflow_dispatch:
-
-jobs:
-  protect-branches:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 1
-          token: ${{ secrets.PAT }}
-      - name: Run Branch Protection
-        uses: venh/branch-protection@v1.0.0
-        with:
-          action: set
-          excludedReposPath: branch-protection/excluded-repos.txt
-          org: PixelmonToGo
-          rulesPath: branch-protection/rules.json
-          token: ${{ secrets.PAT }}
+# ---
+# name: Branch Protection
+# 
+# on:
+#   push:
+#     branches:
+#       - main
+#   schedule:
+#     - cron: 0 * * * *
+#   workflow_dispatch:
+# 
+# jobs:
+#   protect-branches:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+#         with:
+#           fetch-depth: 1
+#           token: ${{ secrets.PAT }}
+#       - name: Run Branch Protection
+#         uses: venh/branch-protection@v1.0.0
+#         with:
+#           action: set
+#           excludedReposPath: branch-protection/excluded-repos.txt
+#           org: PixelmonToGo
+#           rulesPath: branch-protection/rules.json
+#           token: ${{ secrets.PAT }}

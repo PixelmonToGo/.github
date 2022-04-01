@@ -1,26 +1,26 @@
----
-name: Global Workflows
-
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-jobs:
-  replicate_changes:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Replicating global workflow
-        uses: chipwolf/global-workflows-support@v0.6.0
-        with:
-          commit_message: "chore(ci): update global workflows"
-          committer_email: webmaster@pixelmontogo.com
-          committer_username: ptgbot
-          files_to_ignore: global-workflows.yaml,branch-protection.yaml
-          files_to_include: .pre-commit-config.yaml,.github/semantic.yml
-          github_token: ${{ secrets.PAT }}
-          exclude_forked: true
-          repos_to_ignore: custom-models
+# ---
+# name: Global Workflows
+# 
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - main
+# 
+# jobs:
+#   replicate_changes:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
+#       - name: Replicating global workflow
+#         uses: chipwolf/global-workflows-support@v0.6.0
+#         with:
+#           commit_message: "chore(ci): update global workflows"
+#           committer_email: webmaster@pixelmontogo.com
+#           committer_username: ptgbot
+#           files_to_ignore: global-workflows.yaml,branch-protection.yaml
+#           files_to_include: .pre-commit-config.yaml,.github/semantic.yml
+#           github_token: ${{ secrets.PAT }}
+#           exclude_forked: true
+#           repos_to_ignore: custom-models
