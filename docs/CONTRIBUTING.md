@@ -86,7 +86,10 @@ To ensure consistency and quality, all documentation modifications must:
   - configuration examples
   - sequence of command lines
 
-### Commit message guidelines
+### Commit messages
+
+We have very precise rules over how our git commit messages can be formatted.  This leads to **more
+readable messages** that are easy to follow when looking through the **project history**.  We also use the git commit messages to **generate changelogs**.
 
 #### Atomic commits
 
@@ -118,7 +121,7 @@ An exclamation mark (!) must be added after the scope to indicate a **BREAKING C
 
 The **footer** can contain a [closing reference to an issue](https://help.github.com/articles/closing-issues-via-commit-messages).
 
-#### Type
+##### Type
 
 The type must be one of the following:
 
@@ -128,25 +131,30 @@ The type must be one of the following:
 | **feat**     | A new feature                                                                                               |
 | **fix**      | Any change, patch, or bugfix to an existing feature                                                         |
 
-#### Subject
+##### Subject
 
-The subject contains succinct description of the change, to be clearly understood by a quick observation:
+A casual observer must be able to understand what the change will achieve by reading at the subject.
 
-- use the imperative, present tense: "change" not "changed" nor "changes"
-- don't capitalize letters where possible
-- no dot (.) at the end
+The subject contains succinct description of the change:
 
-#### Body
+* use the imperative, present tense: "change" not "changed" nor "changes"
+* don't capitalize first letter
+* no dot (.) at the end
+* avoid unnecessary context clues
+
+##### Body
+
 Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes".
-The body should include the motivation for the change and contrast this with previous behavior if more detailed explanation is required.
+The body should include the motivation for the change and contrast this with previous behavior.
 
-#### Footer
+##### Footer
+
 The footer should contain any information about **Breaking Changes** and is also the place to reference GitHub issues that this commit **Closes**.
 
 **Breaking Changes** should start with the word `BREAKING CHANGE:` with a space or two newlines.
 The rest of the commit message is then used for this.
 
-#### Examples
+##### Examples
 
 ```commit
 fix(pencil): stop graphite breaking when too much pressure applied
