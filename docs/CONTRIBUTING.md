@@ -135,17 +135,17 @@ The type must be one of the following:
 
 A casual observer must be able to understand what the change will achieve by reading at the subject.
 
-The subject contains succinct description of the change:
+The subject contains succinct description of the change without referring to previous behavior:
 
 * use the imperative, present tense: "change" not "changed" nor "changes"
-* don't capitalize first letter
+* don't capitalize letters unless necessary
 * no dot (.) at the end
 * avoid unnecessary context clues
 
 ##### Body
 
 Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes".
-The body should include the motivation for the change and contrast this with previous behavior.
+The body should include the motivation for the change.
 
 ##### Footer
 
